@@ -49,14 +49,6 @@ org        % Run 3D evolution spectrum visualization
 
 `data/data.xlsx` — single-column time series of measured signal samples (wind pressure pulsation), sampled at **10 Hz**.
 
-## Results
-
-See `docs/figures/` for output plots:
-
-- `first_graph.png` — FFT vs. Wavelet power spectrum comparison (log-log scale)
-- `final.jpg`, `final2.jpg`, `F.jpg` — Additional analysis results
-- `first_graph.fig` — Editable MATLAB figure
-
 ## References
 
 ### Primary Reference
