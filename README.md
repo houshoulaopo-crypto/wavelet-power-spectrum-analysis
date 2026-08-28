@@ -1,3 +1,4 @@
+# 基于小波变换的非平稳脉动风时变功率谱估计方法研究
 # Wavelet Power Spectrum Analysis
 
 MATLAB implementation of **non-stationary signal time-varying power spectrum estimation** using Continuous Wavelet Transform (CWT) with Morlet wavelet, compared against traditional FFT-based methods.
