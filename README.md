@@ -53,10 +53,33 @@ See `docs/figures/` for output plots:
 
 ## References
 
-Papers included in `docs/references/`:
+### Primary Reference
 
-- Research on wavelet-transform-based non-stationary signal time-varying power spectrum estimation
-- Structural health monitoring channel data transformation methods
+> 周广东, 丁幼亮, 李爱群, 孙鹏. 基于小波变换的非平稳脉动风时变功率谱估计方法研究[J]. 工程力学, 2013, 30(3): 89-97.
+
+This project implements the theoretical framework proposed in the above paper, including Morlet wavelet normalization, scale-to-frequency mapping, and edge correction for non-stationary wind pressure pulsation power spectrum estimation.
+
+BibTeX:
+
+```bibtex
+@article{周广东2013基于小波变换的非平稳脉动风时变功率谱估计方法研究,
+  title={基于小波变换的非平稳脉动风时变功率谱估计方法研究},
+  author={周广东 and 丁幼亮 and 李爱群 and 孙鹏},
+  journal={工程力学},
+  volume={30},
+  number={3},
+  pages={89--97},
+  year={2013},
+  publisher={《 工程力学》 杂志社}
+}
+```
+
+### Additional References
+
+PDF copies are included in `docs/references/`:
+
+- 周广东等 — 基于小波变换的非平稳脉动风时变功率谱估计方法研究
+- 结构健康监测相关实测强风演变功率谱文献
 
 ## Project Background
 
