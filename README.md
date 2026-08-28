@@ -1,3 +1,4 @@
+<img width="700" height="525" alt="final2" src="https://github.com/user-attachments/assets/99953385-f057-42a8-b67e-28033583626a" />
 # 基于小波变换的非平稳脉动风时变功率谱估计方法研究
 # Wavelet Power Spectrum Analysis
 
