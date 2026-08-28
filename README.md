@@ -1,0 +1,63 @@
+# Wavelet Power Spectrum Analysis
+
+MATLAB implementation of **non-stationary signal time-varying power spectrum estimation** using Continuous Wavelet Transform (CWT) with Morlet wavelet, compared against traditional FFT-based methods.
+
+This project implements the theoretical framework from research papers on wavelet-based power spectral density estimation for non-stationary signals (e.g., wind pressure pulsation data from structural monitoring).
+
+## Features
+
+- **Continuous Wavelet Transform (CWT)** with Morlet wavelet (`morl`)
+- **Custom Morlet wavelet integral** computation for normalization (`morlet_integral_correct.m`)
+- **Wavelet power spectrum estimation** via scale-frequency mapping and edge correction (`Edge.m`)
+- **FFT vs. Wavelet comparison** on log-log scale for power spectral density
+- **3D time-frequency energy spectrum** visualization (evolution spectrum / scalogram)
+- **Non-stationary signal analysis** on real measured wind pressure data
+
+## Key Algorithms
+
+| Module | Description |
+|--------|-------------|
+| `wavelet.m` | Main pipeline: CWT → power spectrum → FFT comparison plot |
+| `signal_power_spectrum.m` | Integrate energy density across frequency at each scale |
+| `abs_psi_squared.m` | Compute Morlet wavelet normalization factor |
+| `morlet_integral_correct.m` | Full-frequency-domain Morlet integral for edge correction |
+| `Edge.m` | Edge correction coefficient for power spectrum estimation |
+| `FFT_power.m` | Traditional FFT power spectrum baseline |
+| `org.m` | 3D evolution spectrum (time-frequency mesh plot) |
+
+## Requirements
+
+- MATLAB R2018b or later
+- Wavelet Toolbox (`cwt`, `scal2frq`, `cmorwavf`)
+
+## Usage
+
+```matlab
+% Place data.xlsx in the data/ folder, then from src/:
+cd src
+wavelet    % Run main CWT power spectrum analysis
+org        % Run 3D evolution spectrum visualization
+```
+
+### Data Format
+
+`data/data.xlsx` — single-column time series of measured signal samples (wind pressure pulsation), sampled at **10 Hz**.
+
+## Results
+
+See `docs/figures/` for output plots:
+
+- `first_graph.png` — FFT vs. Wavelet power spectrum comparison (log-log scale)
+- `final.jpg`, `final2.jpg`, `F.jpg` — Additional analysis results
+- `first_graph.fig` — Editable MATLAB figure
+
+## References
+
+Papers included in `docs/references/`:
+
+- Research on wavelet-transform-based non-stationary signal time-varying power spectrum estimation
+- Structural health monitoring channel data transformation methods
+
+## Project Background
+
+Freelance project — Signal processing / Structural engineering application. Implements a non-trivial theoretical framework involving Morlet wavelet normalization, scale-to-frequency mapping, and edge correction for accurate power spectrum estimation of non-stationary signals where FFT fails to capture time-varying spectral characteristics.
