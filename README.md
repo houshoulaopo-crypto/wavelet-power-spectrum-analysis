@@ -1,7 +1,7 @@
-<img width="700" height="525" alt="final2" src="https://github.com/user-attachments/assets/99953385-f057-42a8-b67e-28033583626a" />
+
 # 基于小波变换的非平稳脉动风时变功率谱估计方法研究
 # Wavelet Power Spectrum Analysis
-
+<img width="700" height="525" alt="final2" src="https://github.com/user-attachments/assets/99953385-f057-42a8-b67e-28033583626a" />
 本项目主要实现论文中关于基于小波的非平稳信号功率谱密度估计（例如，来自结构监测的风压脉动数据）的理论框架。
 MATLAB implementation of **non-stationary signal time-varying power spectrum estimation** using Continuous Wavelet Transform (CWT) with Morlet wavelet, compared against traditional FFT-based methods.
 
